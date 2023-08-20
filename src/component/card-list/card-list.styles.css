@@ -1,0 +1,33 @@
+.card-list {
+  width: 85vw;
+  margin: 0 auto 2rem auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+@media (max-width:450px){
+  html,body{
+    width: 100vw;
+    overflow-x: hidden;
+  }
+  .card-list{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+  }
+ 
+}
+@media (max-width:250px){
+  body, html{
+    overflow-x: auto;
+  }
+}
+@media (min-width:451px)and (max-width:1000px){
+  .card-list{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    gap: 25px;
+  }
+}
